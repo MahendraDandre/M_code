@@ -4,7 +4,7 @@ let buttons = document.querySelectorAll
 let string="";
 let arr = array.from(buttons);
 arr.forEach(button => { 
-    button.addEventlistener("click", (e) =>{ 
+    button.addEventListener("click", (e) =>{ 
         if(e.target.innerHTML == '='){ 
         string = eval(string);
        input.value = string;
